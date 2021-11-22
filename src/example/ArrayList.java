@@ -1,3 +1,4 @@
+package example;
 import java.util.Arrays;
 
 public class ArrayList implements List{
@@ -7,11 +8,11 @@ public class ArrayList implements List{
 	 * @invar | 0 <= size
 	 * @invar | size <= elements.length
 	 */
-	private int size;
+	private int size = 0;
 	/**
 	 * @representationObject
 	 */
-	private Object[] elements = new Object[10];
+	private Object[] elements = new Object[1];
 	
 	public Object[] toArray() { return Arrays.copyOf(elements, size); }
 	

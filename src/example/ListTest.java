@@ -1,3 +1,4 @@
+package example;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -47,12 +48,12 @@ class ListTest {
 	}
 
 	@Test
-	void testArrayIntList() {
+	void testArrayList() {
 		testList(new ArrayList()); 
 	}
 	
 	@Test
-	void testLinkedIntList() {
+	void testLinkedList() {
 		testList(new LinkedList());
 	}
 

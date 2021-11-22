@@ -1,3 +1,4 @@
+package example;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -70,8 +71,8 @@ public interface List {
 	void remove(int index);
 
 	/**
-	 * @pre | value != null
 	 * @mutates | this
+	 * @pre | value != null
 	 * @post | Arrays.equals(toArray(),
 	 *       |     IntStream.range(0, old(size()))
 	 *       |         .filter(i -> i != old(IntStream.range(0, size())

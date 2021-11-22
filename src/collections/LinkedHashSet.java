@@ -3,7 +3,6 @@ package collections;
 import java.util.Arrays;
 
 public class LinkedHashSet implements Set {
-	
 	private class Node {
 		/**
 		 * @invar | previous != null
@@ -36,6 +35,7 @@ public class LinkedHashSet implements Set {
 	 * @representationObject
 	 */
 	private Node sentinel;
+	
 	/**
 	 * @invar | map != null
 	 * @invar | Arrays.stream(map.entrySet().toArray()).allMatch(e ->
@@ -96,5 +96,4 @@ public class LinkedHashSet implements Set {
 			n.next.previous = n.previous;
 		}
 	}
-
 }
